@@ -53,13 +53,13 @@ if ($search != "") {
 												<th><label class= 'labelazo'>Estado</label><br></th>	
 											</tr>
 											<tr>
-												<td><input type= 'text' name= 'm_name' placeholder= '".$nombre."'</td>							
-												<td><strong class= 'fuertecita'>".$apellido."</strong><br></td>
-												<td><strong class= 'fuertecita'>".$ci."</strong><br></td>
-												<td><strong class= 'fuertecita'>".$correo."</strong><br></td>
-												<td><strong class= 'fuertecita'>".$genero."</strong><br></td>
-												<td><strong class= 'fuertecita'>".$telf."</strong><br></td>
-												<td><strong class= 'fuertecita'>".$status."</strong><br><td>
+												<td><input type= 'text' name= 'm_name' placeholder= '".$nombre."' class= 'iinvisible'></td>
+												<td><input type= 'text' name= 'm_ape' placeholder= '".$apellido."' class= 'iinvisible'></td>
+												<td><input type= 'text' name= 'm_ci' placeholder= '".$ci."' class= 'iinvisible'></td>
+												<td><input type= 'text' name= 'm_telf' placeholder= '".$telf."' class= 'iinvisible'></td>
+												<td><input type= 'text' name= 'm_mail' placeholder= '".$correo."' class= 'iinvisible'></td>		 
+												<td><input type= 'text' name= 'm_gender' placeholder= '".$genero."' class= 'iinvisible'></td>
+												<td><input type= 'text' name= 'm_status' placeholder= '".$status."' class= 'iinvisible'></td>
 											</tr>
 										</table>
 									</form>
