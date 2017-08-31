@@ -10,7 +10,7 @@ $foto= $_FILES['picture']['name'];
 $tfoto= $_FILES['picture']['size'];
 $status_emp= $_POST['estado'];
 
-if ($nombre_emp!= "" && $ape_emp!= "" && $ci_emp!="" && $tlf_emp!="" && $mail_emp!="" && $genero_emp!="" && $foto!= "" && $tfoto <= 200000 && $status_emp!= "") {
+if ($nombre_emp!= "" && $ape_emp!= "" && $ci_emp!="" && $tlf_emp!="" && $mail_emp!="" && $genero_emp!="" && $foto!= "" && $tfoto <= 200000 && $status_emp!= ""){
 
 	$directoriof= $_SERVER['DOCUMENT_ROOT'].'/img';
 	move_uploaded_file($_FILES['picture']['tmp_name'], $directoriof.$foto);

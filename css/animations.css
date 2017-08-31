@@ -59,14 +59,8 @@ body {
   height: 30px;
   padding: 10px 10px;
 }
-.login label{
-  color: white;
-  font-family: comic;
-  font-style: italic;
-  font-size: 22px;
-}
 
-.login input[type='text']{
+.txtlogin{
   border: 1.5px solid white ;
   padding-left: 3px;
   border-radius: 2px;
@@ -74,11 +68,11 @@ body {
   font-family: sans-serif;
 }
 
-.login input[type='text']:hover{
+.txtlogin:hover{
   border: 2px solid #8BA9E6;
 }
 
-.login input[type='password']{
+.passlogin{
   border: 1.5px solid white;
   padding-left: 3px;
   border-radius: 2px;
@@ -86,37 +80,16 @@ body {
   font-family: sans-serif;
 }
 
-.login input[type='password']:hover{
+.passlogin:hover{
   border: 2px solid #8BA9E6; 
-}
-
-.login input[type='submit']{
-  background-color: white;
-  font-size: 12px ;
-  border: 1px solid lightgrey;
-  padding: 3px 7px;
-  border-radius: 4px;
-  cursor: pointer;
-  text-decoration: none;
-  outline: none;
-  box-shadow: 0 4px darkgrey;
-}
-
-.login input[type='submit']:hover{
-  border: 1px solid black;
-}
-.login input[type='submit']:active {
-  background-color: #ADA8A8;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
 }
 
 .registro{
   position: relative;
   display: inline-block;
-  float: center;
+  float: right;
   top:150px;
-  left: 7%;
+  right: 40%;
   width: 300px;
   height: auto;
   padding: 15px 15px 15px 15px;
@@ -124,13 +97,13 @@ body {
   border: 2px groove white;
   border-radius: 6px;
 }
-.registro label{
+.labelazo{
   color: white;
   font-family: comic;
   font-style: italic;
   font-size: 22px;
 }
-.registro input[type='text']{
+.inputtext{
   width: 70%;
   border: 1.5px #555 solid;
   padding-left: 3px;
@@ -139,11 +112,11 @@ body {
   font-family: sans-serif;
 }
 
-.registro input[type='text']:hover{
+.inputtext:hover{
   border: 2px solid #BA21BF;
 }
 
-.registro input[type='password']{
+.inputpass{
   width: 70%;
   border: 1.5px #555 solid;
   padding-left: 3px;
@@ -152,64 +125,9 @@ body {
   font-family: sans-serif;
 }
 
-.registro input[type='password']:hover{
+.inputpass:hover{
   border: 2px solid #BA21BF; 
 }
-
-.registro input[type='submit']{
-  background-color: white;
-  font-size: 12px ;
-  border: 1px solid lightgrey;
-  padding: 3px 7px;
-  border-radius: 4px;
-  cursor: pointer;
-  text-decoration: none;
-  outline: none;
-  box-shadow: 0 4px darkgrey;
-}
-
-.registro input[type='submit']:hover{
-  border: 1px solid black;
-}
-.registro input[type='submit']:active {
-  background-color: #ADA8A8;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-.Empleados{
-  width:300px;
-  border: 2px #fff ridge;
-  margin: 50px;
-  padding: 30px 30px;
-  background-color: #F0F7FC;
-  border-radius: 5px;
-}
-.Empleados label{
-  width: 100%;
-  padding-bottom: 4px;
-  color: #3366CC;
-  font-family: serif;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: normal;
-}
-.Empleados input[type='text']{
-  width: 80%;
-  height: 20px;
-  padding-left: 6px;
-  border: 2px #fff ridge;
-  border-radius: 5px; 
-}
-.Empleados input[type='text']:focus{
-  border: 2px solid #555;
-}
-.Empleados input[type='file']{
-  width: 80%;
-  padding: 4px 4px;
-  font-style: helvetica;
-  font-size: 15px;
-  font-style: italic;
-}  
 .contenido{
   height:auto;
   width:auto;
@@ -256,73 +174,23 @@ body {
         color: black;
         border: 1px solid black;
     }
+
 .registrar{
   position: relative;
   display: inline-block;
   float: right;
   top:100px;
   right:40%;
-  width: 300px;
+  width: auto;
   height: auto;
   padding: 15px 15px 15px 15px;
   background-color: #22314E;
   border: 2px groove white;
   border-radius: 6px;
 }
-.registrar label{
-  color: white;
-  font-family: comic;
-  font-style: italic;
-  font-size: 22px;
-}
-.registrar input[type='text']{
-  width: 70%;
-  border: 1.5px #555 solid;
-  padding-left: 3px;
-  border-radius: 2px;
-  height: 24px;
-  font-family: sans-serif;
-}
 
-.registrar input[type='text']:hover{
-  border: 2px solid #BA21BF;
-}
-
-.registrar input[type='password']{
-  width: 70%;
-  border: 1.5px #555 solid;
-  padding-left: 3px;
-  border-radius: 2px;
-  height: 24px;
-  font-family: sans-serif;
-}
-
-.registrar input[type='password']:hover{
-  border: 2px solid #BA21BF; 
-}
-
-.registrar input[type='submit']{
-  background-color: white;
-  font-size: 12px ;
-  border: 1px solid lightgrey;
-  padding: 3px 7px;
-  border-radius: 4px;
-  cursor: pointer;
-  text-decoration: none;
-  outline: none;
-  box-shadow: 0 4px darkgrey;
-}
-
-.registrar input[type='submit']:hover{
-  border: 1px solid black;
-}
-.registrar input[type='submit']:active {
-  background-color: #ADA8A8;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
 .registrar select{
-  width: 80%;
+  width: 70%;
   padding: 4px 4px;
   border: 2px #fff ridge;
   border-radius: 5px;
@@ -340,10 +208,8 @@ body {
   height: 30px;
   padding: 10px 10px;
 }
-.search label{
-  color: white;
-}
-.search input[type='submit']{
+
+.envio{
   background-color: white;
   font-size: 12px ;
   border: 1px solid lightgrey;
@@ -354,11 +220,39 @@ body {
   outline: none;
   box-shadow: 0 4px darkgrey;
 }
-.search input[type='submit']:hover{
+.envio:hover{
   border: 1px solid black;
 }
-.search input[type='submit']:active {
+.envio:active {
   background-color: #ADA8A8;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+.fuertecita{
+  color: black;
+}
+.bresults{
+  width: auto;
+  height: auto;
+  display: inline-block;
+  padding: 4px 4px; 
+  position: relative;
+  float: left;
+  top: 100px;
+  left: 20%;
+}
+.consultadota{
+  border: none;
+  border-collapse: collapse;
+}
+.consultadota th{
+  height: 50px;
+  width: 150px;
+  background-color: #22314E;
+}
+.consultadota td{
+  width: auto; 
+  text-align: center;
+  height: 30px;
+  background-color: white;
 }

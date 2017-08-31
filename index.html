@@ -1,45 +1,48 @@
 <!doctype html>
 <html lan="es">
   <head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="css/animations.css">
-    <div class= "titulazo">      
-      <div class="logear" >
-        <form action= "login.php" method="POST" class="login">
-            <table>
-              <tr>
-                <td><label for="cedula">Cedula</label></td>
-                <td><label for= "password">Contraseña</label></td>
-                  </td>
-              </tr>
-              <tr>
-                <td><input type= "text" id= "cedula" placeholder="Cedula" name="user" id="cedula" /></td>
-                <td><input type= "password" id= "password" placeholder="password" name="pass"/></td>
-                <td><input type="submit" value= "Entrar" /></td>
-              </tr>
-            </table>   
-        </form>
-      </div>
-          <h2>Valet Parking</h2>   
-</head>
-<div class= "registros">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+  </head>
+    <div class= "titulazo">
+      <h2>Valet Parking</h2>      
+        <div class="logear" >
+          <form action= "login.php" method="POST" class="login">
+              <table>
+                <tr>
+                  <td><label class= "labelazo" for="cedula">Cedula</label></td>
+                  <td><label class= "labelazo" for= "password">Contraseña</label></td>
+                    </td>
+                </tr>
+                <tr>
+                  <td><input type= "text" id= "cedula" placeholder="Cedula" name="user" id="cedula" class="txtlogin" /></td>
+                  <td><input type= "password" id= "password" placeholder="password" name="pass" class="passlogin" /></td>
+                  <td><input class= "envio" type="submit" value= "Entrar" /></td>
+                </tr>
+              </table>   
+          </form>
+        </div>
+    </div>
+             
+  <center>
     <form action= "reg_admin.php" method="POST" class="registro">
-      <label for="nombre_reg">Nombre</label><br>
-        <input type="text" id="nombre_reg" placeholder="Ingresa tu nombre" name="n_user"><br>
-      <label for= "ape_reg">Apellido</label><br>
-        <input type="text" name="a_user" placeholder="Ingresa tu apellido" id="ape_reg" ><br>
-      <label for="c_i">Cedula</label><br>
-        <input type="text" name="c_user" id="c_i" placeholder="Cedula o RIF"><br>
-      <label for="tlf_user">Telefono</label><br>
-        <input type="text" name="t_user" id="tlf_user" placeholder="Telefono"><br>
-      <label for="correo">Correo electronico</label><br>
-        <input type="text" name="mail_user" id="correo" placeholder="Correo"><br>
-      <label for="pass">Contraseña</label><br>
-        <input type="password" name="pass_user" id="pass" placeholder="Contraseña"><br>
-      <label for="r_password">Repite Contraseña</label><br>
-        <input type="password" name="rpass_user" id="r_password" placeholder="Repetir Contraseña"><br><br>
-      <input type="submit" value="Registrar">
+      <label class= "labelazo" for="nombre_reg">Nombre</label><br>
+        <input type="text" id="nombre_reg" placeholder="Ingresa tu nombre" name="n_user" class="inputtext"><br>
+      <label class= "labelazo" for= "ape_reg">Apellido</label><br>
+        <input type="text" name="a_user" placeholder="Ingresa tu apellido" id="ape_reg"  class="inputtext"><br>
+      <label class= "labelazo" for="c_i">Cedula</label><br>
+        <input type="text" name="c_user" id="c_i" placeholder="Cedula o RIF" class="inputtext"><br>
+      <label class= "labelazo" for="tlf_user">Telefono</label><br>
+        <input type="text" name="t_user" id="tlf_user" placeholder="Telefono" class="inputtext"><br>
+      <label class= "labelazo" for="correo">Correo electronico</label><br>
+        <input type="text" name="mail_user" id="correo" placeholder="Correo" class="inputtext"><br>
+      <label class= "labelazo" for="pass">Contraseña</label><br>
+        <input type="password" name="pass_user" id="pass" placeholder="Contraseña" class="inputpass" ><br>
+      <label class= "labelazo" for="r_password">Repite Contraseña</label><br>
+        <input type="password" name="rpass_user" id="r_password" placeholder="Repetir Contraseña" class="inputpass" ><br><br>
+      <input type="submit" value="Registrar" class="envio">
     </form>
+  </center>
 </div>
 </div>
   </body>

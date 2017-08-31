@@ -4,15 +4,14 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/animations.css">
 </head>  
-
 <body>
   <div class="titulazo">
     <h2>Sistema de ingreso de personal</h2>
       <div class="search">
         <form action="buscar.php" method="POST">  
-          <label for= "busqueda">Buscar Empleado:</label>
-            <input type="search" name="buscar">
-            <input type="submit" value="buscar">
+          <label class= "labelazo" for= "busqueda">Buscar Empleado:</label>
+            <input type="search" name="buscar" class="txtlogin">
+            <input type="submit" value="buscar" class="envio">
         </form>
       </div>
   </div>
@@ -27,32 +26,32 @@
 
 <div class="registrar">
   <center>
-    <form enctype="multipart/form-data" action= "reg_empleados.php"  method= "POST" >
-      <label for="nombre_emp">Nombre</label><br>
-        <input type="text" id="nombre_emp" placeholder="Ingresa el nombre" name="n_emp"><br><br>
-      <label for= "ape">Apellido</label><br>
-        <input type="text" name="ape_emp" placeholder="Ingresa el apellido" id="ape"><br><br>
-      <label for="c_i">Cedula</label><br>
-        <input type="text" name="c_emp" id="c_i" placeholder="Cedula"><br><br>
-      <label for="tlf">Telefono</label><br>
-        <input type="text" name="t_emp" id="tlf" placeholder="Numero telefonico"><br><br>
-      <label for="mail">Correo electronico</label><br>
-        <input type="text" name="mail_emp" id="mail" placeholder="Correo"><br><br>
-      <label for ="gen">Genero</label><br>
+    <form enctype="multipart/form-data" action= "reg_empleados.php" method= "POST" >
+      <label class= "labelazo" for="nombre_emp">Nombre</label><br>
+        <input type="text" id="nombre_emp" placeholder="Ingresa el nombre" name="n_emp" class="inputtext"><br><br>
+      <label class= "labelazo" for= "ape">Apellido</label><br>
+        <input type="text" name="ape_emp" placeholder="Ingresa el apellido" id="ape" class="inputtext"><br><br>
+      <label class= "labelazo" for="c_i">Cedula</label><br>
+        <input type="text" name="c_emp" id="c_i" placeholder="Cedula" class="inputtext"><br><br>
+      <label class= "labelazo" for="tlf">Telefono</label><br>
+        <input type="text" name="t_emp" id="tlf" placeholder="Numero telefonico" class="inputtext"><br><br>
+      <label class= "labelazo" for="mail">Correo electronico</label><br>
+        <input type="text" name="mail_emp" id="mail" placeholder="Correo" class="inputtext"><br><br>
+      <label class= "labelazo" for ="gen">Genero</label><br>
         <select name="genero_emp" id="gen"><br>
           <option value="mujer">Mujer</option>
           <option value="hombre">Hombre</option>
           <option value="otro">Otro</option>
         </select><br><br>
-      <label for= "imagen">Foto de Perfil</label><br>
+      <label class= "labelazo" for= "imagen">Foto de Perfil</label><br>
         <input name="picture" id= "imagen"  accept="image/*"  size= "30" type="file"><br><br>
-      <label for="Estado">Estado</label><br>
+      <label class= "labelazo" for="Estado">Estado</label><br>
       <select name="estado" id="Estado">
         <option value="">...</option>
         <option value="ocupado">Ocupado</option>
         <option value="Libre">Libre</option>
       </select><br><br><br>
-      <input type="submit" value="Registrar">
+        <input type="submit" value="Registrar" class="envio">
     </form>
   </center>
 </div>  
