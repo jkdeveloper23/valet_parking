@@ -1,30 +1,53 @@
 <?php
+$m_name= $_POST['m_name'];
+$m_ape= $_POST['m_ape'];
+$m_ci= $_POST['m_ci'];
+$m_telf= $_POST['m_telf'];
+$m_mail= $_POST['m_mail'];
+$m_gender= $_POST['m_gender'];
+$m_status= $_POST['m_status'];
+$ci_m= $_POST['ci_m'];
 
-echo "<!doctype html>
-					<html lan= 'esp'>
-						<head>
-							<meta charset='utf-8'/>
-							<link rel='stylesheet' type= 'text/css' href='css/animations.css'>
-						</head>
-						<body>
-							  <div class='titulazo'>
-							    <h2></h2>
-							      <div class='search'>
-							        <form action='buscar.php' method='POST'>  
-							          <label class= 'labelazo' for= 'busqueda'>Buscar Empleado:</label>
-							            <input type='search' name='buscar' class='txtlogin'>
-							            <input type='submit' value='buscar' class='envio'>
-							        </form>
-							      </div>
-							  </div>
-							 <div id='menuv'>
-								  <ul>
-								      <li><a href='#menuv' id='search'>Actualizar Empleados</a></li>
-								      <li><a href='#menuv' id='update'>Buscar</a></li>
-								      <li><a href='#menuv' id='delete'>Borrar</a></li>    
-								  </ul>
-							</div>
-							<div>
-								
-";
+if ($m_name!= "") {
+	include('functions.php');
+		Modifyemp("nombre_emp", $m_name, $ci_m);
+			echo "<script> alert('Se ha modificado correctamente el empleado')
+					window.location.href='reg_empleados.html';</script>";				
+}
+if ($m_ape!= "") {
+	include('functions.php');
+		Modifyemp("ape_emp", $m_ape, $ci_m);
+			echo "<script> alert('Se ha modificado correctamente el empleado')
+					window.location.href='reg_empleados.html';</script>";
+}
+if ($m_ci!= "") {
+	include('functions.php');
+		Modifyemp("cid_emp", $m_ci, $ci_m);
+		echo "<script> alert('Se ha modificado correctamente el empleado')
+				window.location.href='reg_empleados.html';</script>";
+}
+if ($m_telf!= "") {
+	include('functions.php');
+		Modifyemp("telf_emp", $m_telf, $ci_m);
+		echo "<script> alert('Se ha modificado correctamente el empleado')
+				window.location.href='reg_empleados.html';</script>";
+}
+if ($m_mail!= "") {
+	include('functions.php');
+		Modifyemp("correo_emp", $m_mail, $ci_m);
+		echo "<script> alert('Se ha modificado correctamente el empleado')
+				window.location.href='reg_empleados.html';</script>";
+}
+if ($m_gender!= "") {
+	include('functions.php');
+		Modifyemp("genero_emp", $m_gender, $ci_m);
+		echo "<script> alert('Se ha modificado correctamente el empleado')
+				window.location.href='reg_empleados.html';</script>";
+}
+if ($m_status!= "") {
+	include('functions.php');
+		Modifyemp("status_emp", $m_status, $ci_m);
+		echo "<script> alert('Se ha modificado correctamente el empleado')
+				window.location.href='reg_empleados.html';</script>";
+}
 ?>

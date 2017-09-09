@@ -11,7 +11,7 @@ if ($search != "") {
 				$ci= $result['cid_emp'];
 				$telf= $result['telf_emp'];
 				$correo= $result['correo_emp'];
-				$genero= $result['genero_emp'];
+				$gender= $result['genero_emp'];
 				$status= $result['status_emp'];
 
 			echo "<!doctype html>
@@ -47,29 +47,29 @@ if ($search != "") {
 												<th><label class= 'labelazo'>Nombre</label><br></th>
 												<th><label class= 'labelazo'>Apellido</label><br></th>
 												<th><label class= 'labelazo'>Cedula</label><br></th>
+												<th><label class= 'labelazo'>Telefono</label><br></th>
 												<th><label class= 'labelazo'>Correo</label><br></th>
 												<th><label class= 'labelazo'>Genero</label><br></th>											
-												<th><label class= 'labelazo'>Telefono</label><br></th>
 												<th><label class= 'labelazo'>Estado</label><br></th>	
 											</tr>
 											<tr>
-												<td><input type= 'text' name= 'm_name' placeholder= '".$nombre."' class= 'iinvisible'></td>
-												<td><input type= 'text' name= 'm_ape' placeholder= '".$apellido."' class= 'iinvisible'></td>
-												<td><input type= 'text' name= 'm_ci' placeholder= '".$ci."' class= 'iinvisible'></td>
-												<td><input type= 'text' name= 'm_telf' placeholder= '".$telf."' class= 'iinvisible'></td>
-												<td><input type= 'text' name= 'm_mail' placeholder= '".$correo."' class= 'iinvisible'></td>		 
-												<td><input type= 'text' name= 'm_gender' placeholder= '".$genero."' class= 'iinvisible'></td>
-												<td><input type= 'text' name= 'm_status' placeholder= '".$status."' class= 'iinvisible'></td>
+												<td><input type= 'text' name= 'm_name' placeholder= ".$nombre." class= 'iinvisible'></td>
+												<td><input type= 'text' name= 'm_ape' placeholder= ".$apellido." class= 'iinvisible'></td>
+												<td><input type= 'text' name= 'm_ci' placeholder= ".$ci." class= 'iinvisible'></td>
+												<td><input type= 'text' name= 'm_telf' placeholder= ".$telf." class= 'iinvisible'></td>
+												<td><input type= 'text' name= 'm_mail' placeholder= ".$correo." class= 'iinvisible'></td>		 
+												<td><input type= 'text' name= 'm_gender' placeholder= ".$gender." class= 'iinvisible'></td>
+												<td><input type= 'text' name= 'm_status' placeholder= ".$status." class= 'iinvisible'></td>
 											</tr>
 										</table>
-									</form>
 								</center>
-								<form action= 'modificar.php' method='POST'>
-									<input type= 'hidden' name= 'c_consulta' value= ".$ci.">
-									<br><center><input type= 'submit' value= 'Modificar' class= 'envio'></center>
+									<br><center>
+											<input type= 'hidden' value= ".$ci." name= 'ci_m'>
+											<input type= 'submit' value= 'Modificar' class= 'envio'>
+										</center>
 								</form>
 								<form action= 'eliminar.php' method='POST'>
-									<input type= 'hidden' name= 'c_consulta' value= ".$ci.">
+									<input type= 'hidden' name= 'c_delete' value= ".$ci.">
 									<br><center><input type= 'submit' value= 'Eliminar' class= 'envio'></center>
 								</form>
 							</div>
