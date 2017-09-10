@@ -2,7 +2,7 @@
 $c_delete= $_POST['c_delete'];
 
 
-	if ($c_delete!= 0){
+	if (!empty($c_delete)){
 		include('functions.php');
 			Deleteemp($c_delete);
 				echo "<script> alert('Empleado borrado correctamente')
@@ -11,5 +11,4 @@ $c_delete= $_POST['c_delete'];
 		echo "<script> alert('La cedula seleccionada ya no existe')
 				window.location.href='index.html';</script>";
 	}
-
 ?>

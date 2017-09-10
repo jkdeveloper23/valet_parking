@@ -46,10 +46,15 @@ function Deleteemp($cedula){
 		mysqli_query($conn, "DELETE FROM empleados WHERE cid_emp= ('$cedula')")or die(mysqli_error());
 		mysqli_close($conn);
 }
-function SearchAll($table){
+function SearchAll($table, $field){
 	require('conection.php');
-		$result= mysqli_query($conn, "SELECT * FROM $table ORDER BY cid_emp ASC")or die(mysqli_error('error en la query'));
+		$result= mysqli_query($conn, "SELECT * FROM $table ORDER BY $field ASC")or die(mysqli_error('error en la query'));
 		$GLOBALS['list']=$result;
+		mysqli_close($conn);
+}
+function Modifyadmin($db_data, $a_data, $ced_admin){
+	require('conection.php');
+		mysqli_query($conn, "UPDATE usuarios SET $db_data= ('$a_data') WHERE cedula_admin= ('$ced_admin')")or die(mysqli_error());
 		mysqli_close($conn);
 }
 ?>
