@@ -27,7 +27,18 @@
 
 <?php
 include('functions.php');
-	SearchAll("empleados", "cid_emp");
+	/*
+	
+	Viendo la funcion en el archivo functions.php, tiene mucho mas sentido 
+	colocar los parametros de la forma que lo coloco abajo, asi otra persona 
+	que lea el codigo sabra que es lo que esta pasando y como usar esa funcion
+	
+	Tambien seria bueno colocar un valor por defecto a $field -$orderByField- que
+	sea comun en todas las tablas (id, created_at, etc), asi la podrias usar en 
+	cualquier tabla sin problemas
+	
+	*/
+	SearchAll($table = "empleados", $orderByField = "cid_emp");
 		if ($list->num_rows > 0) {
 			
 		echo "<div class= 'bresults'>
